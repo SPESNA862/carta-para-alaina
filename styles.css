@@ -1,0 +1,105 @@
+body {
+    background-color: #f5e8d0; /* Beige cálido */
+    color: #4b3a2e; /* Marrón oscuro para texto */
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff; /* Blanco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(75, 58, 46, 0.2); /* Sombra suave con tono marrón, como en Stardew */
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Estilos mejorados para la carta-imagen */
+#carta-container {
+    margin-bottom: 25px;
+    cursor: pointer; /* Indica que se puede hacer clic */
+    display: inline-block; /* Para que efectos como transform/hover funcionen mejor */
+    transition: transform 0.2s ease-out; /* Transición suave para el hover */
+}
+
+#carta-container:hover {
+    transform: scale(1.1); /* Efecto de agrandar un poco al pasar el mouse */
+}
+
+#carta-pixelada {
+    width: 120px; /* Un poco más grande para que luzca bien */
+    height: auto; /* Mantiene la proporción */
+    image-rendering: pixelated; /* Esencial para que la imagen pixelada se vea nítida */
+    border: 4px solid #7a5c43; /* Borde marrón oscuro, como madera */
+    padding: 8px; /* Un pequeño espacio entre el borde y la imagen */
+    background-color: #fff8e7; /* Un color crema para el fondo de la carta, si la imagen tiene transparencias */
+    border-radius: 3px; /* Bordes muy sutilmente redondeados, si gusta al estilo pixel */
+    box-shadow: 3px 3px 0px #bfaea0; /* Sombra sutil pixelada para la carta */
+}
+
+#mensaje-te-quiero p {
+    font-size: 28px; /* Un poco más grande y cálido */
+    color: #c06c84; /* Un tono rosa/rojo suave y cálido */
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #f5e8d0;
+}
+
+#cumplido-area {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#hoja-cumplido {
+    background-color: #fdf5e6; /* Beige muy claro, como papel */
+    border: 3px dashed #c8b6a6; /* Borde tipo papel punteado */
+    padding: 25px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(75, 58, 46, 0.05);
+}
+
+#texto-cumplido {
+    font-size: 14px; /* Un poco más pequeño para los cumplidos */
+    line-height: 1.7;
+    color: #5a4c40;
+}
+
+button#boton-seguir-buscando { /* Usar ID para mayor especificidad si es necesario */
+    background-color: #a07c5b; /* Marrón medio, estilo Stardew */
+    color: #ffffff; /* Texto blanco */
+    border: 3px solid #7a5c43; /* Borde marrón más oscuro */
+    padding: 12px 25px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #7a5c43; /* Sombra pixelada para botón */
+    transition: all 0.1s ease-in-out;
+    text-transform: uppercase;
+}
+
+button#boton-seguir-buscando:hover {
+    background-color: #8a6c4f;
+    box-shadow: 2px 2px 0px #7a5c43;
+    transform: translate(2px, 2px);
+}
+
+button#boton-seguir-buscando:active {
+    background-color: #7a5c43;
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+.hidden {
+    display: none;
+}
